@@ -6,9 +6,9 @@ summaryを書く
 
 ### Member
 
-- [s19008 新里　陽]() // メインとなるリポジトリ
-- [s19007 新垣　有亮]()
-- [s19016 永峯　尚聖]()
+- [s19008 新里　陽](https://github.com/s19008)
+- [s19007 新垣　有亮](https://github.com/s19007)
+- [s19016 永峯　尚聖](https://github.com/s19016)
 
 ### References
 
