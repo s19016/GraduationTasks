@@ -14,7 +14,6 @@
         - 7月 -> 設計
         - 8,9,10月 -> 開発
         - 11月 -> プロトタイプ、動作確認
-        
 ### Member
 
 - [s19008 新里　陽](https://github.com/s19008/GraduationTasks)
