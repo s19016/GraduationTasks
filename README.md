@@ -8,13 +8,17 @@
         - ログイン機能(どんな人かわかるようにする為)
     - ターゲット
         - 暇な人、何をして遊びたいか決まっているが相手がいない人。
-
-
+        - 急に暇ができた人
+    - スケジュール
+        - 6月 -> 企画書作成
+        - 7月 -> 設計
+        - 8,9,10月 -> 開発
+        - 11月 -> プロトタイプ、動作確認
 ### Member
 
-- [s19008 新里　陽](https://github.com/s19008)
-- [s19007 新垣　有亮](https://github.com/s19007)
-- [s19016 永嶺　尚聖](https://github.com/s19016)
+- [s19008 新里　陽](https://github.com/s19008/GraduationTasks)
+- [s19007 新垣　有亮](https://github.com/s19007/GraduationTasks)
+- [s19016 永嶺　尚聖](https://github.com/s19016/GraduationTasks)
 
 ### References
 
