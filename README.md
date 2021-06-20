@@ -10,7 +10,6 @@ summaryを書く
 - [s19007 新垣　有亮](https://github.com/s19007)
 - [s19016 永嶺　尚聖](https://github.com/s19016)
 
-
 ### References
 
 - [スケジュール](リンク)
