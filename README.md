@@ -12,9 +12,9 @@
 
 ### Member
 
-- [s19008 新里　陽](https://github.com/s19008)
-- [s19007 新垣　有亮](https://github.com/s19007)
-- [s19016 永嶺　尚聖](https://github.com/s19016)
+- [s19008 新里　陽](https://github.com/s19008/GraduationTasks)
+- [s19007 新垣　有亮](https://github.com/s19007/GraduationTasks)
+- [s19016 永嶺　尚聖](https://github.com/s19016/GraduationTasks)
 
 ### References
 
