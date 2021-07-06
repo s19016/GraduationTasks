@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/faundation/_base.scss",
+        "../scss/faundation/_general.scss",
+        "../scss/faundation/_reset.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_main.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
