@@ -1,0 +1,39 @@
+.main {
+    width: 100%;
+    background-color: #111;
+    &-visual {
+        width: 100%;
+        margin: 0 auto;
+        .swiper-container {
+            width: 100vw;
+            height: 700px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    position: relative;
+                    .slide-text {
+                        position: absolute;
+                        top: 70%;
+                        right: 10%;
+                        max-width: 500px;
+                        width: 100%;
+                        height: 200px;
+                        background-color: #111;
+                        color: #fff;
+                        .slide-title {
+                            font-size: 35px;
+                        }
+                        .slide-category {
+                            width: 100px;
+                            height: 30px;
+                            font-size: 18px;
+                            text-align: center;
+                            margin-top: 50px;
+                            background-color: #02B468;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
