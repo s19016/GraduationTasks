@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
-            <h1 class="header-logo">タイトル</h1><!-- /.header-logo -->
+            <h1 class="header-logo">ひまッチ</h1><!-- /.header-logo -->
             <nav class="header-nav">
                 <ul class="nav-list">
+                    <li class="list-item"><a href="">検索</a></li><!-- /.list-item -->
                     <li class="list-item"><a href="">投稿</a></li><!-- /.list-item -->
                     <li class="list-item"><a href="">ログイン</a></li><!-- /.list-item -->
                     <li class="list-item"><a href="">アカウント</a></li><!-- /.list-item -->
@@ -20,5 +24,75 @@
             </nav><!-- /.header-nav -->
         </div><!-- /.header-inner -->
     </header><!-- /.header -->
+    <main class="main">
+        <div class="main-visual">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="src/image/football-3471402_1920.jpg" alt="">
+                        <div class="slide-text">
+                            <h3 class="slide-title">サッカーします</h3><!-- /.slide-title -->
+                            <p class="slide-category">サッカー</p><!-- /.slide-category -->
+                        </div><!-- /.slide-text -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="src/image/michelle-mcewen-yk2VUa5vtA0-unsplash.jpg" alt="">
+                        <div class="slide-text">
+                            <h3 class="slide-title">暇な人</h3><!-- /.slide-title -->
+                            <p class="slide-category">ボウリング</p><!-- /.slide-category -->
+                        </div><!-- /.slide-text -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="src/image/sean-stone-dkb3wApu5XQ-unsplash.jpg" alt="">
+                        <div class="slide-text">
+                            <h3 class="slide-title">ゲームする人</h3><!-- /.slide-title -->
+                            <p class="slide-category">PS4</p><!-- /.slide-category -->
+                        </div><!-- /.slide-text -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="src/image/victor-freitas-qZ-U9z4TQ6A-unsplash.jpg" alt="">
+                        <div class="slide-text">
+                            <h3 class="slide-title">筋トレ</h3><!-- /.slide-title -->
+                            <p class="slide-category">筋トレ</p><!-- /.slide-category -->
+                        </div><!-- /.slide-text -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="src/image/yaron-richman-uZmr0wwfHNA-unsplash.jpg" alt="">
+                        <div class="slide-text">
+                            <h3 class="slide-title">テニス</h3><!-- /.slide-title -->
+                            <p class="slide-category">tennis</p><!-- /.slide-category -->
+                        </div><!-- /.slide-text -->
+                    </div><!-- /.swiper-slide -->
+                </div><!-- /.swiper-wrapper -->
+                <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
+                <div class="swiper-button-prev"></div><!-- /.swiper-button-prev -->
+                <div class="swiper-button-next"></div><!-- /.swiper-button-next -->
+                <div class="siper-scrollbar"></div><!-- /.siper-scrollbar -->
+            </div><!-- /.swiper-container -->
+        </div><!-- /.main-visual -->
+        <section class="favorite">
+            <h2 class="section-title">お気に入り</h2><!-- /.section-title -->
+
+        </section><!-- /.favorite -->
+    </main><!-- /.main -->
+    <script>
+        let mySwiper = new Swiper ('.swiper-container', {
+            loop: true,
+            speed: 1500,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scroolbar: {
+                el: '.swiper-scrollbar',
+            },
+            autoplay: {
+                delay: 10000,
+            },
+        });
+    </script>
 </body>
 </html>
