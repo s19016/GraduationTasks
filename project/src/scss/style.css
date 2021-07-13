@@ -416,7 +416,7 @@ progress {
 }
 
 .header-inner .header-logo {
-  font-size: 25px;
+  font-size: 30px;
   font-family: "メイリオ";
   color: #000;
   position: relative;
@@ -507,6 +507,35 @@ progress {
   margin-top: 50px;
   background-color: #02B468;
   border-radius: 20px;
+}
+
+.register-main {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+
+.register-main .register-title {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  color: #111;
+}
+
+.register-main .form {
+  max-width: 1180px;
+  width: 100%;
+  margin: 100px auto 0 auto;
+}
+
+.register-main .form-item .label {
+  font-size: 25px;
+  color: #111;
+}
+
+.register-main .form-item input {
+  color: #111;
+  border: 2px solid #111;
 }
 
 .favorite {

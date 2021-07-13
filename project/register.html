@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">ひまッチ</h1>
+        <!-- /.header-logo -->
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="list-item"><a href="">検索</a></li>
+            <!-- /.list-item -->
+            <li class="list-item"><a href="">投稿</a></li>
+            <!-- /.list-item -->
+            <li class="list-item"><a href="">ログイン</a></li>
+            <!-- /.list-item -->
+            <li class="list-item"><a href="">アカウント</a></li>
+            <!-- /.list-item -->
+          </ul>
+          <!-- /.nav-list -->
+        </nav>
+        <!-- /.header-nav -->
+      </div>
+      <!-- /.header-inner -->
+    </header>
+    <!-- /.header -->
+    <div class="register-main">
+      <h2 class="register-title">新規登録</h2>
+      <!-- /.register title -->
+      <form action="" method="" class="form">
+        <div class="form-item">
+          <label class="label" for="name">名前</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required=""
+            placeholder="山田　太郎"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label" for="nickname">ニックネーム</label>
+          <input
+            id="nickname"
+            type="text"
+            name="nickname"
+            required=""
+            placeholder="たろきち"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label" for="e-mail">e-mail</label>
+          <span class="form-require">必須</span
+          ><!-- /.form-require -->
+          <input
+            id="e-mail"
+            type="email"
+            name="email"
+            required=""
+            placeholder="メールアドレスを記入して下さい"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label" for="password">パスワード</label>
+          <span class="form-require">必須</span
+          ><!-- /.form-require -->
+          <input
+            id="password"
+            type="password"
+            name="password"
+            required=""
+            placeholder="7文字以上"
+            minlength="7"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label" for="name">名前</label>
+          <input type="text" name="name" placeholder="" />
+        </div>
+        <div class="form-item">
+          <label class="label" for="name">名前</label>
+          <input type="text" name="name" placeholder="" />
+        </div>
+      </form>
+      <!-- /.form -->
+    </div>
+    <!-- /.register-main -->
+  </body>
+</html>

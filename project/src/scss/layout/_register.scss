@@ -1,0 +1,27 @@
+.register-main {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    .register-title {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        color: #111;
+    }
+    .form {
+        max-width: 1180px;
+        width: 100%;
+        margin: 100px auto 0 auto;
+        &-item {
+            .label {
+                font-size: 25px;
+                color: #111;
+            }
+            input {
+                color: #111;
+                border: 2px solid #111;
+                
+            }
+        }
+    }
+}
