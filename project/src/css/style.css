@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
 body {
-  color: #FFF;
-  font-family: "游明朝", "游明朝体",sans-serif;
+  color: #111;
+  font-family: "M PLUS Rounded 1c", "游ゴシック体",sans-serif;
   font-weight: 500;
 }
 
@@ -417,7 +418,6 @@ progress {
 
 .header-inner .header-logo {
   font-size: 30px;
-  font-family: "メイリオ";
   color: #000;
   position: relative;
 }
@@ -518,24 +518,55 @@ progress {
 .register-main .register-title {
   max-width: 1180px;
   width: 100%;
+  font-size: 30px;
   margin: 0 auto;
+  padding: 40px 0;
   color: #111;
 }
 
 .register-main .form {
   max-width: 1180px;
   width: 100%;
-  margin: 100px auto 0 auto;
+  margin: 40px auto 100px auto;
+}
+
+.register-main .form-item {
+  width: 100%;
+  margin: 20px 0;
 }
 
 .register-main .form-item .label {
+  display: block;
   font-size: 25px;
-  color: #111;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .register-main .form-item input {
-  color: #111;
+  display: block;
+  max-width: 470px;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
   border: 2px solid #111;
+}
+
+.register-main .form-item .pull-down {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  font-size: 25px;
+  border: 2px solid #111;
+}
+
+.register-main .form .radio-btn {
+  display: inline-block;
+  max-width: 100px;
+  height: 25px;
+}
+
+.register-main .form .radio .gender-label {
+  font-size: 25px;
 }
 
 .favorite {

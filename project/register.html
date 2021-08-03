@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <title>Document</title>
+    <title>ひまッチ ― 新規登録</title>
   </head>
   <body>
     <header class="header">
       <div class="header-inner">
-        <h1 class="header-logo">ひまッチ</h1>
+        <h1 class="header-logo"><a href="index.html">ひまッチ</a></h1>
         <!-- /.header-logo -->
         <nav class="header-nav">
           <ul class="nav-list">
@@ -33,14 +33,14 @@
     <div class="register-main">
       <h2 class="register-title">新規登録</h2>
       <!-- /.register title -->
-      <form action="" method="" class="form">
+      <form action="" method="POST" class="form">
         <div class="form-item">
           <label class="label" for="name">名前</label>
           <input
             id="name"
             type="text"
             name="name"
-            required=""
+            required
             placeholder="山田　太郎"
           />
         </div>
@@ -50,43 +50,70 @@
             id="nickname"
             type="text"
             name="nickname"
-            required=""
+            required
             placeholder="たろきち"
           />
         </div>
         <div class="form-item">
           <label class="label" for="e-mail">e-mail</label>
-          <span class="form-require">必須</span
-          ><!-- /.form-require -->
           <input
             id="e-mail"
             type="email"
             name="email"
-            required=""
+            required
             placeholder="メールアドレスを記入して下さい"
           />
         </div>
         <div class="form-item">
           <label class="label" for="password">パスワード</label>
-          <span class="form-require">必須</span
-          ><!-- /.form-require -->
           <input
             id="password"
             type="password"
             name="password"
-            required=""
+            required
             placeholder="7文字以上"
             minlength="7"
           />
         </div>
-        <div class="form-item">
-          <label class="label" for="name">名前</label>
-          <input type="text" name="name" placeholder="" />
+        <div class="form-item radio">
+          <label class="label" for="name">性別</label>
+          <input
+            class="radio-btn"
+            id="radio-a"
+            type="radio"
+            name="gender"
+            value="男性"
+          /><label class="gender-label" for="radio-a">男性</label>
+          <input
+            class="radio-btn"
+            id="radio-b"
+            type="radio"
+            name="gender"
+            value="女性"
+          /><label class="gender-label" for="radio-b">女性</label><br />
         </div>
         <div class="form-item">
-          <label class="label" for="name">名前</label>
-          <input type="text" name="name" placeholder="" />
+          <label class="label" for="pull-down">年代</label>
+          <select
+            class="pull-down"
+            name="pull-down"
+            id="pull-down"
+            placeholder="年代"
+          >
+            <option value="10years">10代</option>
+            <option value="20years">20代</option>
+            <option value="30years">30代</option>
+            <option value="40years">40代</option>
+            <option value="50years">50代</option>
+            <option value="60years">60代以上</option></select
+          ><!-- /# -->
         </div>
+        <!-- /.form-item -->
+        <div class="form-item">
+          <label for="address" class="label"></label
+          ><!-- /.label -->
+        </div>
+        <!-- /.form-item -->
       </form>
       <!-- /.form -->
     </div>
