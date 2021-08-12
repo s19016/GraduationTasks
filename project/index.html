@@ -24,7 +24,7 @@
             <!-- /.list-item -->
             <li class="list-item"><a href="post.html">投稿</a></li>
             <!-- /.list-item -->
-            <li class="list-item"><a href="register.html">アカウント</a></li>
+            <li class="list-item" id="modal-btn"><a>アカウント</a></li>
             <!-- /.list-item -->
           </ul>
           <!-- /.nav-list -->
@@ -111,29 +111,33 @@
         <!-- /.swiper-container -->
       </div>
       <!-- /.main-visual -->
-      <div class="modal">
-        <div class="modal-bg"></div>
+      <div id="modal" class="modal">
+        <div class="modal-bg modal-close"></div>
         <!-- /.modal-bg -->
         <div class="modal-wrap">
           <h2 class="section-title">Login</h2>
           <!-- /.section title -->
           <div class="modal-box">
             <form action="" class="login-form">
+              <a id="close-btn" class="close-btn modal-close">×</a><!-- /.close-btn -->
               <input
                 id="name"
                 type="text"
                 name="name"
                 required
-                placeholder="username"
+                placeholder="ユーザー名"
               />
               <input
                 id="password"
                 type="password"
                 name="password"
                 required
-                placeholder="password"
+                placeholder="パスワード"
                 minlength="7"
               />
+              <p class="modal-text"><a href="#">パスワードをお忘れですか？</a></p><!-- /.modal-text -->
+              <button class="submit" type="submit" id="login-button">Login</button>
+              <p class="register-link"><a href="register.html">新規登録</a></p><!-- /.register-link -->
             </form>
             <!-- /.login-form -->
           </div>
@@ -171,5 +175,6 @@
         breakpoints: {},
       });
     </script>
+    <script text="javascript" src="src/js/script.js"></script>
   </body>
 </html>
