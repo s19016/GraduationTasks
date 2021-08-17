@@ -12,7 +12,7 @@ $(function () {
       "src/image/samsung-605439_1920.jpg",
       "src/image/white-ps4-controller.jpg",
     ],
-    interval: 6000,
+    interval: 8000,
     loop: true,
     shuffle: true,
     effect: "fade",
