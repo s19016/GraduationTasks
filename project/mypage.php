@@ -1,3 +1,20 @@
+<?php
+session_start();
+require_once './classes/UserLogic.php';
+require_once './functions.php';
+
+//　ログインしているか判定し、していなかったら新規登録画面へ返す
+$result = UserLogic::checkLogin();
+
+if (!$result) {
+  $_SESSION['login_err'] = 'ユーザを登録してログインしてください！';
+  header('Location: signup.php');
+  return;
+}
+
+$login_user = $_SESSION['login_user'];
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -28,6 +45,13 @@
       <!-- /.header-inner -->
     </header>
     <!-- /.header -->
+    <h2>マイページ</h2>
+    <p>ログインユーザ：<?php echo h($login_user['name']) ?></p>
+    <p>メールアドレス：<?php echo h($login_user['email']) ?></p>
+    <form action="./logout.php" method="POST">
+      <input type="submit" name="logout" value="ログアウト" />
+      <a href="./index.php">ホームに戻る</a>
+    </form>
     <script text="javascript" src="src/js/script.js"></script>
   </body>
 </html>

@@ -37,5 +37,6 @@ $(function () {
         modal.classList.remove("open");
       }, ms);
     });
-  }
+  };
+  
 });
