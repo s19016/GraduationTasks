@@ -27,13 +27,13 @@ $login_user = $_SESSION['login_user'];
   <body>
     <header class="header">
       <div class="header-inner">
-        <h1 class="header-logo"><a href="index.html">ひまッチ</a></h1>
+        <h1 class="header-logo"><a href="index.php">ひまッチ</a></h1>
         <!-- /.header-logo -->
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="list-item"><a href="search.html">検索</a></li>
             <!-- /.list-item -->
-            <li class="list-item"><a href="post.html">投稿</a></li>
+            <li class="list-item"><a href="post.php">投稿</a></li>
             <!-- /.list-item -->
             <li class="list-item" id="modal-btn"><a>アカウント</a></li>
             <!-- /.list-item -->

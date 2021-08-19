@@ -29,13 +29,13 @@ unset($_SESSION['login_err']);
 <body>
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-logo"><a href="index.html">ひまッチ</a></h1>
+      <h1 class="header-logo"><a href="index.php">ひまッチ</a></h1>
       <!-- /.header-logo -->
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="list-item"><a href="search.html">検索</a></li>
           <!-- /.list-item -->
-          <li class="list-item"><a href="post.html">投稿</a></li>
+          <li class="list-item"><a href="post.php">投稿</a></li>
           <!-- /.list-item -->
           <li class="list-item" id="modal-btn"><a>アカウント</a></li>
           <!-- /.list-item -->
@@ -56,23 +56,23 @@ unset($_SESSION['login_err']);
     <form action="register.php" method="POST" class="form">
       <div class="form-item">
         <label class="label" for="name">名前</label>
-        <input id="name" type="text" name="name" required placeholder="山田　太郎" />
+        <input id="name" type="text" name="name" placeholder="山田　太郎" />
       </div>
       <div class="form-item">
         <label class="label" for="nickname">ニックネーム</label>
-        <input id="nickname" type="text" name="nickname" required placeholder="たろきち" />
+        <input id="nickname" type="text" name="nickname" placeholder="たろきち" />
       </div>
       <div class="form-item">
         <label class="label" for="e-mail">e-mail</label>
-        <input id="e-mail" type="email" name="email" required placeholder="メールアドレスを記入して下さい" />
+        <input id="e-mail" type="email" name="email" placeholder="メールアドレスを記入して下さい" />
       </div>
       <div class="form-item">
         <label class="label" for="password">パスワード</label>
-        <input id="password" type="password" name="password" required placeholder="7文字以上" minlength="7" />
+        <input id="password" type="password" name="password" placeholder="7文字以上" minlength="7" />
       </div>
       <div class="form-item">
         <label class="label" for="password_conf">パスワード確認</label>
-        <input id="password_conf" type="password" name="password_conf" />
+        <input id="password_conf" type="password" name="password_conf" placeholder="7文字以上" minlength="7"/>
       </div><!-- /.form-item -->
       <div class="form-item radio">
         <label class="label" for="name">性別</label>
