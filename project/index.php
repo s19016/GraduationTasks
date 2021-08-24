@@ -30,15 +30,15 @@ session_destroy();
 <body>
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-logo"><a href="#">ひまッチ</a></h1>
+      <h1 class="header-logo"><a class="logo-text" href="#">ひまッチ</a></h1>
       <!-- /.header-logo -->
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="list-item"><a href="search.html">検索</a></li>
+          <li class="list-item"><a class="item-btn" href="search.html">検索</a></li>
           <!-- /.list-item -->
-          <li class="list-item"><a href="post.php">投稿</a></li>
+          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
           <!-- /.list-item -->
-          <li class="list-item" id="modal-btn"><a>アカウント</a></li>
+          <li class="list-item" id="modal-btn"><a class="item-btn">アカウント</a></li>
           <!-- /.list-item -->
         </ul>
         <!-- /.nav-list -->
@@ -56,7 +56,7 @@ session_destroy();
         </h2>
         <p class="main-visual-text">ひまッチ</p>
         <!-- /.main-visual-text -->
-        <a href="" class="main-visual-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
+        <a href="search.html" class="main-visual-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
       </div>
       <!-- /.main-visual-wrapper -->
     </div>
@@ -72,14 +72,14 @@ session_destroy();
         <div class="modal-box">
           <form action="./login.php" class="login-form" method="POST">
             <a id="close-btn" class="close-btn modal-close">×</a><!-- /.close-btn -->
-            <input id="email" type="text" name="email" required placeholder="メールアドレス" />
+            <input id="email" type="text" name="email" placeholder="メールアドレス" />
             <?php if (isset($err['email'])) : ?>
               <p><?php echo $err['email']; ?></p>
             <?php endif; ?>
             <?php if (isset($err['msg'])) : ?>
               <p><?php echo $err['msg']; ?></p>
             <?php endif; ?>
-            <input id="password" type="password" name="password" required placeholder="パスワード" />
+            <input id="password" type="password" name="password" placeholder="パスワード" />
             <?php if (isset($err['password'])) : ?>
               <p><?php echo $err['password']; ?></p>
             <?php endif; ?>
@@ -111,7 +111,7 @@ session_destroy();
       <!-- /.about-explanation -->
       <div class="contents-wrapper">
         <div class="about-contents">
-          <img src="" alt="探すイメージ画像" class="about-contents-img" />
+          <img src="src/image/1055031_magnifying_search_view_icon.svg" alt="探すイメージ画像" class="about-contents-img" />
           <h3 class="about-contents-title">コミュニティを探す</h3>
           <!-- /.about-contents-title -->
           <p class="about-contents-text">
@@ -121,7 +121,7 @@ session_destroy();
         </div>
         <!-- /.about-contents -->
         <div class="about-contents">
-          <img src="" alt="作るイメージ画像" class="about-contents-img" />
+          <img src="src/image/3209296_address_home_homepage_house_resient_icon.svg" alt="作るイメージ画像" class="about-contents-img" />
           <h3 class="about-contents-title">コミュニティを作る</h3>
           <!-- /.about-contents-title -->
           <p class="about-contents-text">
@@ -131,7 +131,7 @@ session_destroy();
         </div>
         <!-- /.about-contents -->
         <div class="about-contents">
-          <img src="" alt="参加するイメージ画像" class="about-contents-img" />
+          <img src="src/image/7659234_sign in_log in_open_join_icon.svg" alt="参加するイメージ画像" class="about-contents-img" />
           <h3 class="about-contents-title">コミュニティに参加する</h3>
           <!-- /.about-contents-title -->
           <p class="about-contents-text">
@@ -146,6 +146,9 @@ session_destroy();
     <!-- /.about -->
   </main>
   <!-- /.main -->
+  <footer class="footer">
+    <p class="copy-right">&copy; 2021 ひまッチ</p><!-- /.copy-right -->
+  </footer><!-- /.footer -->
   <script src="src/js/jquery.bgswitcher.js"></script>
   <script text="javascript" src="src/js/script.js"></script>
 </body>

@@ -1,5 +1,7 @@
 $(function () {
   const mv = $('.main-visual');
+  const logo = $('.logo-text');
+  const item_btn = $('.item-btn');
   const modal = document.getElementById("modal");
   const modal_btn = document.getElementById("modal-btn");
   const close = document.querySelectorAll(".modal-close");
@@ -39,4 +41,14 @@ $(function () {
     });
   };
   
+  $(window).scroll(function() {
+    let scroll = $(this).scrollTop();
+    if (scroll > 765) {
+      logo.addClass('change');
+      item_btn.addClass('change');
+    } else {
+      logo.removeClass('change');
+      item_btn.removeClass('change');
+    };
+  });
 });

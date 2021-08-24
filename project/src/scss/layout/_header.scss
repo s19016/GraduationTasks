@@ -32,8 +32,12 @@
                     width: 100%;
                 }
             }
-            a {
+            .logo-text {
                 color: #eff;
+                transition: all 0.4s;
+                &.change {
+                    color: #111;
+                }
             }
         }
         .header-nav {
@@ -49,11 +53,15 @@
                         opacity: 0.8;
                         border-bottom: 2px solid #eff;
                     }
-                    a {
+                    .item-btn {
                         display: inline-block;
                         cursor: pointer;
                         width: 100%;
                         color: #eff;
+                        transition: all 0.4s;
+                        &.change {
+                            color: #111;
+                        }
                     }
                 }
             }

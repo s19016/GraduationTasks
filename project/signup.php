@@ -72,7 +72,7 @@ unset($_SESSION['login_err']);
       </div>
       <div class="form-item">
         <label class="label" for="password_conf">パスワード確認</label>
-        <input id="password_conf" type="password" name="password_conf" placeholder="7文字以上" minlength="7"/>
+        <input id="password_conf" type="password" name="password_conf" placeholder="7文字以上"/>
       </div><!-- /.form-item -->
       <div class="form-item radio">
         <label class="label" for="name">性別</label>
