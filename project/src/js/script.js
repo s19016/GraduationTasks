@@ -1,7 +1,7 @@
 $(function () {
-  const mv = $('.main-visual');
-  const logo = $('.logo-text');
-  const item_btn = $('.item-btn');
+  const mv = $(".main-visual");
+  const logo = $(".logo-text");
+  const item_btn = $(".item-btn");
   const modal = document.getElementById("modal");
   const modal_btn = document.getElementById("modal-btn");
   const close = document.querySelectorAll(".modal-close");
@@ -24,8 +24,8 @@ $(function () {
 
   modal_btn.addEventListener("click", () => {
     setTimeout(function () {
-        modal.style.opacity = 1;
-      }, 50);
+      modal.style.opacity = 1;
+    }, 50);
     setTimeout(function () {
       modal.classList.add("open");
     }, 1);
@@ -39,16 +39,16 @@ $(function () {
         modal.classList.remove("open");
       }, ms);
     });
-  };
-  
-  $(window).scroll(function() {
+  }
+
+  $(window).scroll(function () {
     let scroll = $(this).scrollTop();
     if (scroll > 765) {
-      logo.addClass('change');
-      item_btn.addClass('change');
+      logo.addClass("change");
+      item_btn.addClass("change");
     } else {
-      logo.removeClass('change');
-      item_btn.removeClass('change');
-    };
+      logo.removeClass("change");
+      item_btn.removeClass("change");
+    }
   });
 });

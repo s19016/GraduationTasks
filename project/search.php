@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/css/style.css" />
-  <title>Document</title>
+  <title>ひまッチ ― 検索</title>
 </head>
 
 <body>
@@ -16,11 +16,17 @@
       <!-- /.header-logo -->
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="list-item"><a class="item-btn" href="search.php">検索</a></li>
+          <li class="list-item">
+            <a class="item-btn" href="search.php">検索</a>
+          </li>
           <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
+          <li class="list-item">
+            <a class="item-btn" href="post.php">投稿</a>
+          </li>
           <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="mypage.php">マイページ</a></li>
+          <li class="list-item">
+            <a class="item-btn" href="mypage.php">マイページ</a>
+          </li>
           <!-- /.list-item -->
         </ul>
         <!-- /.nav-list -->
@@ -30,8 +36,7 @@
     <!-- /.header-inner -->
   </header>
   <!-- /.header -->
-  <section class="post">
-    <h2 class="post-title">新規投稿を作成する</h2>
+  <section class="search">
     <div class="form-item">
       <label class="label" for="name">検索</label>
       <input id="name" type="text" name="name" required placeholder="検索内容" />
@@ -88,7 +93,7 @@
       </select><!-- /# -->
     </div>
   </section>
-  <!-- /.post -->
+  <!-- /.search -->
   <script text="javascript" src="src/js/script.js"></script>
 </body>
 

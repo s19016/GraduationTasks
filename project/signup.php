@@ -4,7 +4,6 @@ session_start();
 require_once './functions.php';
 require_once './classes/UserLogic.php';
 
-
 $result = UserLogic::checkLogin();
 if ($result) {
   header('Location: mypage.php');
@@ -33,11 +32,11 @@ unset($_SESSION['login_err']);
       <!-- /.header-logo -->
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="list-item"><a href="search.html">検索</a></li>
+          <li class="list-item"><a class="item-btn" href="search.php">検索</a></li>
           <!-- /.list-item -->
-          <li class="list-item"><a href="post.php">投稿</a></li>
+          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
           <!-- /.list-item -->
-          <li class="list-item" id="modal-btn"><a>アカウント</a></li>
+          <li class="list-item"><a class="item-btn" href="mypage.php">マイページ</a></li>
           <!-- /.list-item -->
         </ul>
         <!-- /.nav-list -->
@@ -72,7 +71,7 @@ unset($_SESSION['login_err']);
       </div>
       <div class="form-item">
         <label class="label" for="password_conf">パスワード確認</label>
-        <input id="password_conf" type="password" name="password_conf" placeholder="7文字以上"/>
+        <input id="password_conf" type="password" name="password_conf" placeholder="7文字以上" />
       </div><!-- /.form-item -->
       <div class="form-item radio">
         <label class="label" for="name">性別</label>

@@ -7,10 +7,10 @@ require_once './classes/UserLogic.php';
 $err = [];
 
 // バリデーション
-if(!$email = filter_input(INPUT_POST, 'email')) {
+if (!$email = filter_input(INPUT_POST, 'email')) {
   $err['email'] = 'メールアドレスを記入してください。';
 }
-if(!$password = filter_input(INPUT_POST, 'password')) {
+if (!$password = filter_input(INPUT_POST, 'password')) {
   $err['password'] = 'パスワードを記入してください。';
 }
 
@@ -31,15 +31,20 @@ if (!$result) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>ログイン完了</title>
 </head>
+
 <body>
-<h2>ログイン完了</h2>
-<p>ログインしました！</p>
-<a href="./mypage.php">マイページへ</a>
-<a href="./index.php">ホームに戻る</a>
+  <div class="login-wrapper">
+    <h2 class="login-wrapper-title">ログインしました！</h2><!-- /.login-wrapper-text -->
+    <a class="login-wrapper-mypage" href="mypage.php">マイページへ</a>
+    <a class="login-wrapper-home" href="index.php">ホーム画面に戻る</a>
+  </div><!-- /.login-wrapper -->
 </body>
+
 </html>

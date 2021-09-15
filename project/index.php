@@ -14,6 +14,8 @@ $err = $_SESSION;
 $_SESSION = array();
 session_destroy();
 
+$result = UserLogic::checkLogin();
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -61,8 +63,6 @@ session_destroy();
       <!-- /.main-visual-wrapper -->
     </div>
     <!-- /.main-visual -->
-    <section class="recommend"></section>
-    <!-- /.recommend -->
     <div id="modal" class="modal">
       <div class="modal-bg modal-close"></div>
       <!-- /.modal-bg -->
