@@ -47,13 +47,20 @@ $login_user = $_SESSION['login_user'];
     <!-- /.header-inner -->
   </header>
   <!-- /.header -->
-  <h2>マイページ</h2>
-  <p>ログインユーザ：<?php echo h($login_user['name']) ?></p>
-  <p>メールアドレス：<?php echo h($login_user['email']) ?></p>
-  <form action="./logout.php" method="POST">
-    <input type="submit" name="logout" value="ログアウト" />
-    <a href="./index.php">ホームに戻る</a>
-  </form>
+  <section class="mypage-wrapper">
+    <div class="acount-inner">
+      <div class="acount-data">
+        <img src="" alt="" class="acount-data-img">
+        <h2 class="acount-data-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
+        <p class="acount-data-email"><?php echo h($login_user['email']) ?></p><!-- /.acount-data-email -->
+        <a href="" class="acount-data-edit">編集</a><!-- /.acount-data-edit -->
+      </div><!-- /.acount-data -->
+    </div><!-- /.acount-inner -->
+    <form action="./logout.php" method="POST">
+      <input type="submit" name="logout" value="ログアウト" />
+      <a href="./index.php">ホームに戻る</a>
+    </form>
+  </section><!-- /.my-page-wrapper -->
   <script text="javascript" src="src/js/script.js"></script>
 </body>
 
