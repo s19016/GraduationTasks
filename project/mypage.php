@@ -50,17 +50,20 @@ $login_user = $_SESSION['login_user'];
   <section class="mypage-wrapper">
     <div class="acount-inner">
       <div class="acount-data">
-        <img src="" alt="" class="acount-data-img">
-        <h2 class="acount-data-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
-        <p class="acount-data-email"><?php echo h($login_user['email']) ?></p><!-- /.acount-data-email -->
-        <a href="" class="acount-data-edit">編集</a><!-- /.acount-data-edit -->
+        <div class="acount-data-icon" style="background-image:url('src/image/football-3471402_1920.jpg');">
+        </div><!-- /.acount-inner-icon -->
+        <div class="acount-data-text">
+          <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
+          <p class="acount-data-text-email"><?php echo h($login_user['email']) ?></p><!-- /.acount-data-email -->
+          <a href="" class="acount-text-data-edit">編集</a><!-- /.acount-data-edit -->
+        </div><!-- /.acount-data-text -->
       </div><!-- /.acount-data -->
     </div><!-- /.acount-inner -->
-    <form action="./logout.php" method="POST">
-      <input type="submit" name="logout" value="ログアウト" />
-      <a href="./index.php">ホームに戻る</a>
-    </form>
   </section><!-- /.my-page-wrapper -->
+  <form action="./logout.php" method="POST">
+    <input type="submit" name="logout" value="ログアウト" />
+    <a href="./index.php">ホームに戻る</a>
+  </form>
   <script text="javascript" src="src/js/script.js"></script>
 </body>
 
