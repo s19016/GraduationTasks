@@ -30,17 +30,17 @@ $result = UserLogic::checkLogin();
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <h1 class="header-logo"><a class="logo-text" href="#">ひまッチ</a></h1>
+  <header class="top-header">
+    <div class="top-header-inner">
+      <h1 class="top-header-logo"><a class="top-logo-text" href="#">ひまッチ</a></h1>
       <!-- /.header-logo -->
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="list-item"><a class="item-btn" href="search.html">検索</a></li>
+      <nav class="top-header-nav">
+        <ul class="top-nav-list">
+          <li class="top-list-item"><a class="item-btn" href="search.html">検索</a></li>
           <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
+          <li class="top-list-item"><a class="item-btn" href="post.php">投稿</a></li>
           <!-- /.list-item -->
-          <li class="list-item" id="modal-btn"><a class="item-btn">アカウント</a></li>
+          <li class="top-list-item" id="modal-btn"><a class="item-btn">アカウント</a></li>
           <!-- /.list-item -->
         </ul>
         <!-- /.nav-list -->

@@ -1,6 +1,6 @@
 $(function () {
   const mv = $(".main-visual");
-  const logo = $(".logo-text");
+  const logo = $(".top-logo-text");
   const item_btn = $(".item-btn");
   const modal = document.getElementById("modal");
   const modal_btn = document.getElementById("modal-btn");
