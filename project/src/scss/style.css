@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 body {
   color: #111;
-  font-family: "游ゴシック体", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: 500;
 }
 
@@ -504,6 +504,7 @@ progress {
   top: 0;
   width: 100%;
   height: 70px;
+  background-color: #252804;
   z-index: 9000;
 }
 
@@ -527,6 +528,7 @@ progress {
 .header-inner .header-logo {
   font-size: 30px;
   font-family: "M PLUS Rounded 1c";
+  color: #eff;
   position: relative;
 }
 
@@ -547,14 +549,8 @@ progress {
   width: 100%;
 }
 
-.header-inner .header-logo .logo-text {
+.header-inner .header-logo a {
   color: #eff;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.header-inner .header-logo .logo-text.change {
-  color: #111;
 }
 
 .header-inner .header-nav .nav-list {
@@ -639,14 +635,14 @@ progress {
 .main-visual-wrapper .main-visual-title {
   color: #eee;
   font-size: 30px;
+  font-weight: normal;
   letter-spacing: 3px;
-  font-family: sans-serif;
 }
 
 .main-visual-wrapper .main-visual-text {
   color: #eee;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: normal;
   margin: 30px 0 100px 0;
 }
 
@@ -972,6 +968,7 @@ progress {
 
 .about-title {
   font-size: 35px;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
